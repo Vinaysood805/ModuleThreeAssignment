@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "nameOfProduct": "Home Organic Mushroom Farm",
+        "price": "$22.85",
+        "description": "Gardening",
+        "features": "Now you can grow your own fungus right at home—and not in between your toes!",
+        "image": "mushroom.jpg"
+    },
+
+    {
+        "id": "2",
+        "nameOfProduct": "A Human Finger",
+        "price": "$15.00",
+        "description": "Science",
+        "features": "The perfect gift for the science teacher in your life—or the kid you need to start hiding the scissors from!",
+        "image": "finger.jpg"
+    },
+
+    {
+        "id": "3",
+        "nameOfProduct": "A dog dryer",
+        "price": "$39.95",
+        "description": "Pet Products",
+        "features": "Having a dog dry itself off all over your living room post-bath is rarely ideal. Fortunately, there's a bizarre blow-dryer suit out there that can help keep your pup from dripping all over the house.",
+        "image": "dryer.jpg"
+    },
+
+    {
+        "id": "4",
+        "nameOfProduct": "A Godzilla garden gnome",
+        "price": "$24.99",
+        "description": "Statue",
+        "features": "Let those pesky, roving neighborhood gnomes know where they're not welcome.",
+        "image": "garden.jpg"
+    },
+
+    {
+        "id": "5",
+        "nameOfProduct": "A desktop refrigerator",
+        "price": "$38.00",
+        "description": "Smart Toys",
+        "features": "Now when you say you need a cold one, you can mean it literally, with one (1) single refrigerated beverage at your fingertips.",
+        "image": "toy.jpg"
+    }
+]
