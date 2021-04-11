@@ -1,0 +1,58 @@
+<!--Module 3 Assignment-->
+<!--HTML Content-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Grab a Deal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <img src="https://www.thesocialobserver.com/wp-content/uploads/2019/07/giphy.gif" class="center" alt="goal tag" width="500" height="250">
+        <h1> Top 5 Weird Deals is On!<br>(For Limited Time)</h1>
+    </header>
+    <main>
+        <h2>Weird Deals offers customers the opportunity to get great deals on some really strange products. It is available just once a year. Grab you offer Now!!</h2>
+        <div id="myData"></div>
+        
+        <script>
+        //Json Source file
+        fetch("https://vinaysood805.github.io/Module_Three_Assignment/products.json")
+        .then(function(resp){
+            return resp.json();
+        })
+        .then (function (data){
+            appendData(data);
+        });
+
+        function appendData(data) {
+        let main = document.getElementById("myData");
+        for (let i = 0; i < data.length; i++){
+        let image = document.createElement('img');
+        image.setAttribute('src', 'https://vinaysood805.github.io/Module_Three_Assignment/images/' + data[i].image);
+        image.setAttribute('height', '200');
+        image.setAttribute('width', '200');
+        image.setAttribute('font-size', '0');
+        let div = document.createElement("div");
+        div.innerHTML =
+        "(" + (i+1) + ") Product Name: " + data[i].nameOfProduct +
+        "\n" +
+        "Price: " + data[i].price +
+        "\n" +
+        "Product Description: " + data[i].description +
+        "\n" +
+        "Specification: " + data[i].features;
+        main.appendChild(image);
+        main.appendChild(div);
+        }
+    }
+        </script>
+    </main>
+    <footer>
+      <p><b>COMP1073 - Module Three Assignment - &copy; 2021</b></p>
+    </footer>
+  </body>
+</html>
